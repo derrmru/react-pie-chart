@@ -17,7 +17,7 @@ npm i react-pie-chart
 2. Implement in your app, as per the following example:
 
 ```javascript
-import PayPalButton from "react-paypal-smart-button";
+import PieChart from "react-pie-chart";
 
 function App() {
   return (
