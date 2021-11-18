@@ -11,13 +11,13 @@ A reusable and responsive React Pie Chart component using D3
 1. In your CLI and once navigated to your React JS project, install with the following command:
 
 ```javascript
-npm i react-pie-chart
+npm i react-js-pie-chart
 ```
 
 2. Implement in your app, as per the following example:
 
 ```javascript
-import PieChart from "react-pie-chart";
+import PieChart from "react-js-pie-chart";
 
 function App() {
   return (

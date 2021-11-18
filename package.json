@@ -1,5 +1,5 @@
 {
-  "name": "react-pie-chart",
+  "name": "react-js-pie-chart",
   "version": "1.0.0",
   "description": "A simple reusable pie chart component.",
   "main": "./lib/PieChart.js",
