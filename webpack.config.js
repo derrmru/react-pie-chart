@@ -1,4 +1,5 @@
 const path = require('path');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: 'production',
@@ -13,7 +14,8 @@ module.exports = {
       {
         test: /\.js?$/,
         exclude: /(node_modules)/,
-        use: 'babel-loader',
+        loader: 'babel-loader',
+        options: { presets: ['@babel/env', '@babel/preset-react'] }
       },
       {
         test: /\.css$/,

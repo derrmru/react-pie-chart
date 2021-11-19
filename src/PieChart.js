@@ -56,12 +56,10 @@ const PieChart = ({
 
     //The PIE
     const pie = D3.pie().value((d) => d.value);
-    console.log(pie(data));
+    const sortedPie = pie(data).sort((a, b) => a.data.value - b.data.value);
 
     // Creating arc
     const arc = D3.arc().innerRadius(innerRadius).outerRadius(radius);
-
-    const sortedPie = pie(data).sort((a, b) => a.data.value - b.data.value);
 
     // Grouping different arcs
     var arcs = g.selectAll('arc').data(sortedPie).enter().append('g');
@@ -107,7 +105,7 @@ const PieChart = ({
      */
     const leg = D3.select(legend.current);
 
-    leg.attr('class', 'legend' + `${animation && 'slide'}`);
+    leg.attr('class', 'legend ' + `${animation && 'slide'}`);
 
     const legendItem = leg.selectAll('div').data(sortedPie.reverse()).enter();
 
@@ -133,7 +131,7 @@ const PieChart = ({
 
   return (
     <div
-      className='layout'
+      className="layout"
       style={
         legendPosition === 'bottom'
           ? { flexDirection: 'column' }

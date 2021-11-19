@@ -22,15 +22,15 @@
   color: white;
   padding: 5px;
   margin: 5px;
+  flex-grow: 2;
 }
 
 .slide {
-  -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)
-    both;
-  animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  -webkit-animation: puffInCenter 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: puffInCenter 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 
-@-webkit-keyframes puff-in-center {
+@-webkit-keyframes puffInCenter {
   0% {
     -webkit-transform: scale(2);
     transform: scale(2);
@@ -46,7 +46,7 @@
     opacity: 1;
   }
 }
-@keyframes puff-in-center {
+@keyframes puffInCenter {
   0% {
     -webkit-transform: scale(2);
     transform: scale(2);
